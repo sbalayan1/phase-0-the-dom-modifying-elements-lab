@@ -4,6 +4,9 @@
 main.remove();
 
 
+
+
+
 //create variable newHeader and new h1 element 
 const newHeader = document.createElement('h1');
 
@@ -11,7 +14,17 @@ const newHeader = document.createElement('h1');
 newHeader.setAttribute("id",'victory');
 
 //grab newHeader variable and set innerHTML attribute to message
-newHeader.innerHTML = "Sean is the champion";
+newHeader.textContent = "Sean is the champion";
 
 
+//append the newHeader to the body of the html
+document.body.append(newHeader)
 
+//now lets try to nest a paragraph within the new header
+
+
+const newP = document.createElement('p');
+newP.setAttribute('className','yomama','id','andyodaddy');
+newP.textContent = 'hey this worked!';
+
+document.body.append(newP);
